@@ -192,3 +192,6 @@ This means the tool cannot reach a Kubernetes API server. Causes and fixes:
 - **`--scope available` still requires a reachable cluster.** It extracts RBAC by pulling operator bundle images from the registry (e.g. quay.io), but it first lists `PackageManifests` from the cluster's OLM package server to discover which operators exist. There is no offline catalog mode: without a running API server (with OLM installed), the scan cannot enumerate operators to fetch.
 
 This tool was developed for research purposes to illustrate the findings in our blog. It is provided as-is and should be thoroughly reviewed before running against production clusters.
+
+## Share Your Thoughts And Feedback
+For more comments, suggestions or questions, you can contact [Lior Yakim](https://www.linkedin.com/in/lior-yakim-79b100156) from Unit 42.
